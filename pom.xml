@@ -1,20 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>maoko</groupId>
-  <artifactId>maoko.dllSolibLoad</artifactId>
-  <version>0.0.1</version>
-  <packaging>jar</packaging>
+	<groupId>maoko</groupId>
+	<artifactId>maoko.dllSolibLoad</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
 
-  <name>dllSolibLoad</name>
-  <url>http://maven.apache.org</url>
+	<name>dllSolibLoad</name>
+	<url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
-  <dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>net.java.dev.jna</groupId>
 			<artifactId>jna</artifactId>
@@ -34,7 +35,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<!-- 防止update更新时 工程编译环境发生改变 -->
 	<build>
 		<finalName>maoko-libLoad</finalName>
@@ -44,11 +45,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+
 </project>
